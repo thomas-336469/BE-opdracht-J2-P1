@@ -10,7 +10,7 @@ class Instructeur extends BaseController
     }
 
 
-    public function index()
+    public function TestInst()
     {
         $result  = $this->instructeurModel->getInstructeurs();
 
@@ -20,6 +20,6 @@ class Instructeur extends BaseController
             'title' => 'Instructeurs in dienst'
         ];
 
-        $this->view('instructeur/index', $data);
+        $this->view('Instructeur', $data);
     }
 }
